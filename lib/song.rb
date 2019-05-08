@@ -4,8 +4,7 @@ class Song
   @@count = 0
   @@genres = []   #STORES GENRE
   @@artists = []  #STORES ARTISTS
-#  @@artist_count = {}
-#  @@genre_count = {}
+
   
   def initialize(name, artist, genre)
     @name = name          # NAMES OF SONGS
@@ -41,7 +40,7 @@ class Song
     
     @@artists.each {|artist| artist_count[artist] += 1}     
     
-    #iterates over the artists, counts the artists in the array and adds 1 each time
+    #iterates over the artists, counts the artists in the array adds that artist to the array in the array adds +1 to the count each time
     
     artist_count        
     
